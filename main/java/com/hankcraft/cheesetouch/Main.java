@@ -15,6 +15,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = Reference.MODID, name = Reference.MODNAME, version = Reference.MODVERSION)
 public class Main {
 
+    public static final CheeseTab cheeseTab = new CheeseTab("cheeseTab");
+
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
     public static CommonProxy proxy;
 
