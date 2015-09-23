@@ -1,13 +1,10 @@
 package com.hankcraft.cheesetouch.init;
 
-import com.hankcraft.cheesetouch.Main;
+import com.hankcraft.cheesetouch.CheesetouchMain;
 import com.hankcraft.cheesetouch.Reference;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.potion.Potion;
-import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 
@@ -17,8 +14,8 @@ public class ModItems {
     public static Item cheese_nugget;
 
     public static void init() {
-        cheese_sword = new Item().setUnlocalizedName("cheese_sword").setCreativeTab(Main.cheeseTab).setMaxDamage(800);
-        cheese_nugget = new Item().setUnlocalizedName("cheese_nugget").setCreativeTab(Main.cheeseTab);
+        cheese_sword = new Item().setUnlocalizedName("cheese_sword").setCreativeTab(CheesetouchMain.cheeseTab).setMaxDamage(800);
+        cheese_nugget = new Item().setUnlocalizedName("cheese_nugget").setCreativeTab(CheesetouchMain.cheeseTab);
 
     }
 

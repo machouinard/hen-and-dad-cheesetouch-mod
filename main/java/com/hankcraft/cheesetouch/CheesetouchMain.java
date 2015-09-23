@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 
 @Mod(modid = Reference.MODID, name = Reference.MODNAME, version = Reference.MODVERSION)
-public class Main {
+public class CheesetouchMain {
 
     public static final CheeseTab cheeseTab = new CheeseTab("cheeseTab");
 
@@ -21,7 +21,7 @@ public class Main {
     public static CommonProxy proxy;
 
     @Instance("cheesetouch")
-    public static Main instance;
+    public static CheesetouchMain instance;
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent e) {

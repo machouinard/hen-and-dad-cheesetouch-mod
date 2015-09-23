@@ -1,6 +1,6 @@
 package com.hankcraft.cheesetouch.init;
 
-import com.hankcraft.cheesetouch.Main;
+import com.hankcraft.cheesetouch.CheesetouchMain;
 import com.hankcraft.cheesetouch.Reference;
 import com.hankcraft.cheesetouch.blocks.BlockTest;
 import com.hankcraft.cheesetouch.blocks.CheeseBlock;
@@ -18,7 +18,7 @@ public class ModBlocks {
     public static  Block test_block;
 
     public static void init() {
-        cheeseBlock = new CheeseBlock(Material.iron).setUnlocalizedName("cheeseBlock").setCreativeTab(Main.cheeseTab);
+        cheeseBlock = new CheeseBlock(Material.iron).setUnlocalizedName("cheeseBlock").setCreativeTab(CheesetouchMain.cheeseTab);
         test_block = new BlockTest(Material.cloth).setUnlocalizedName("test_block");
     }
 
