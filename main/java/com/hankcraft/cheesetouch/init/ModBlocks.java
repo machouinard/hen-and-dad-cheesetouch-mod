@@ -1,6 +1,5 @@
 package com.hankcraft.cheesetouch.init;
 
-import com.hankcraft.cheesetouch.CheesetouchMain;
 import com.hankcraft.cheesetouch.Reference;
 import com.hankcraft.cheesetouch.blocks.BlockGen;
 import com.hankcraft.cheesetouch.blocks.BlockTest;

@@ -1,11 +1,8 @@
 package com.hankcraft.cheesetouch.init;
 
-import com.hankcraft.cheesetouch.CheesetouchMain;
 import com.hankcraft.cheesetouch.Reference;
-import com.hankcraft.cheesetouch.blocks.CheeseBlock;
 import com.hankcraft.cheesetouch.items.CheeseSlice;
 import com.hankcraft.cheesetouch.items.CheeseSword;
-import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -24,7 +21,6 @@ public class ModItems {
 
     public static void register() {
         GameRegistry.registerItem(cheese_sword, cheese_sword.getUnlocalizedName().substring(5));
-//        GameRegistry.registerItem(cheese_nugget, cheese_nugget.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(cheese_slice, cheese_slice.getUnlocalizedName().substring(5));
     }
 
