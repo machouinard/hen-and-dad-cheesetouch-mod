@@ -1,5 +1,8 @@
 package com.hankcraft.cheesetouch;
 
+import com.hankcraft.cheesetouch.init.ModItems;
+import com.hankcraft.cheesetouch.proxy.CommonProxy;
+import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -11,34 +14,29 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 /**
  * Created by markchouinard on 9/22/15.
  */
-@Mod(modid = Main.MODID, name = Main.MODNAME, version = Main.MODVERSION)
+@Mod(modid = Reference.MODID, name = Reference.MODNAME, version = Reference.MODVERSION)
 public class Main {
 
-    public static final String MODID = "cheesetouch";
-    public static final String MODNAME = "Cheese Touch";
-    public static final String MODVERSION = "1.0.0";
+    @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
+    public static CommonProxy proxy;
 
     @Instance("cheesetouch")
     public static Main instance;
 
-    @SidedProxy(clientSide = "com.hankcraft.com.cheesetouch.ClientProxy", serverSide = "com.hankcraft.com.cheesetouch.ServerProxy")
-    public static CommonProxy proxy;
-
-
     @EventHandler
     public void preInit(FMLPreInitializationEvent e) {
 
-        this.proxy.preInit(e);
+        ModItems.init();
+        ModItems.register();
     }
     @EventHandler
     public void init(FMLInitializationEvent e) {
 
-        this.proxy.init(e);
+        proxy.registerRenders();
     }
     @EventHandler
     public void postInit(FMLPostInitializationEvent e) {
 
-        this.proxy.postInit(e);
     }
 
 }
