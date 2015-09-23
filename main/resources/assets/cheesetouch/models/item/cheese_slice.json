@@ -1,7 +1,7 @@
 {
   "parent": "builtin/generated",
   "textures": {
-    "layer0": "cheesetouch:items/cheese_nugget"
+    "layer0": "cheesetouch:items/cheese_slice"
   },
   "display": {
     "thirdperson": {

@@ -18,8 +18,8 @@ public class ModBlocks {
     public static  Block test_block;
 
     public static void init() {
-        cheeseBlock = new CheeseBlock(Material.iron).setUnlocalizedName("cheeseBlock").setCreativeTab(CheesetouchMain.cheeseTab);
-        test_block = new BlockTest(Material.cloth).setUnlocalizedName("test_block");
+        cheeseBlock = new CheeseBlock(Material.iron);
+        test_block = new BlockTest(Material.cloth);
     }
 
     public static void register() {
