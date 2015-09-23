@@ -1,8 +1,8 @@
 package com.hankcraft.cheesetouch;
 
+import com.hankcraft.cheesetouch.init.ModBlocks;
 import com.hankcraft.cheesetouch.init.ModItems;
 import com.hankcraft.cheesetouch.proxy.CommonProxy;
-import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -11,9 +11,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-/**
- * Created by markchouinard on 9/22/15.
- */
+
 @Mod(modid = Reference.MODID, name = Reference.MODNAME, version = Reference.MODVERSION)
 public class Main {
 
@@ -28,6 +26,8 @@ public class Main {
 
         ModItems.init();
         ModItems.register();
+        ModBlocks.init();
+        ModBlocks.register();
     }
     @EventHandler
     public void init(FMLInitializationEvent e) {

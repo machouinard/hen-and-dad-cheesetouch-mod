@@ -3,18 +3,19 @@ package com.hankcraft.cheesetouch.init;
 import com.hankcraft.cheesetouch.Reference;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-/**
- * Created by markchouinard on 9/22/15.
- */
+
 public class ModItems {
 
     public static Item cheese_sword;
 
     public static void init() {
-        cheese_sword = new Item().setUnlocalizedName("cheese_sword");
+        cheese_sword = new Item().setUnlocalizedName("cheese_sword").setCreativeTab(CreativeTabs.tabMaterials).setMaxDamage(800);
 
     }
 
