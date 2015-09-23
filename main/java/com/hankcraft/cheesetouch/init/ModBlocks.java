@@ -2,6 +2,7 @@ package com.hankcraft.cheesetouch.init;
 
 import com.hankcraft.cheesetouch.CheesetouchMain;
 import com.hankcraft.cheesetouch.Reference;
+import com.hankcraft.cheesetouch.blocks.BlockGen;
 import com.hankcraft.cheesetouch.blocks.BlockTest;
 import com.hankcraft.cheesetouch.blocks.CheeseBlock;
 import net.minecraft.block.Block;
@@ -26,6 +27,7 @@ public class ModBlocks {
 
         GameRegistry.registerBlock( cheeseBlock, cheeseBlock.getUnlocalizedName().substring(5));
         GameRegistry.registerBlock( test_block, test_block.getUnlocalizedName().substring(5));
+        GameRegistry.registerWorldGenerator(new BlockGen(), 5);
     }
 
     public static void registerRenders() {
