@@ -28,17 +28,17 @@ public class Main {
     @EventHandler
     public void preInit(FMLPreInitializationEvent e) {
 
-        System.out.println("Called method: FMLPreInitializationEvent");
+        this.proxy.preInit(e);
     }
     @EventHandler
     public void init(FMLInitializationEvent e) {
 
-        System.out.println("Called method: FMLInitializationEvent");
+        this.proxy.init(e);
     }
     @EventHandler
     public void postInit(FMLPostInitializationEvent e) {
 
-        System.out.println("Called method: FMLPostInitializationEvent");
+        this.proxy.postInit(e);
     }
 
 }
