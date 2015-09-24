@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
-  "version": "${version}",
+  "modid": "cheesetouch",
+  "name": "Cheese Touch",
+  "description": "A Moldy Cheese Mod",
+  "version": "May the Cheese be With You",
   "mcversion": "${mcversion}",
-  "url": "",
+  "url": "http://hankcraft.com",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["Hank", "Hank's Dad"],
+  "credits": "Thanks to Henry Chouinard!",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
