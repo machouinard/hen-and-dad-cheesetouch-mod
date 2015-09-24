@@ -7,6 +7,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.BlockPos;
 import net.minecraft.world.World;
 
@@ -25,9 +26,10 @@ public class CheeseBlock extends Block {
     @Override
     public void onEntityCollidedWithBlock(World worldIn, BlockPos pos, Entity entityIn) {
         // Chucks player WAY up in the air = certain death :)
-//        entityIn.motionY += 4.0;
-        if(entityIn instanceof EntityLivingBase) {
-            ((EntityLivingBase) entityIn).addPotionEffect(new PotionEffect(Potion.confusion.getId(), 600, 3));
-        }
+        entityIn.motionY += 4.0;
+//        if(entityIn instanceof EntityLivingBase) {
+//            ((EntityLivingBase) entityIn).addPotionEffect(new PotionEffect(Potion.confusion.getId(), 600, 3));
+//        }
     }
+
 }
