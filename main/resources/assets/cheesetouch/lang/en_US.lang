@@ -1,4 +1,5 @@
 tile.cheeseBlock.name=Moldy Cheese
 item.cheese_sword.name=CheeseTouch Sword
 item.cheese_slice.name=Moldy Cheese Slice
+item.cheese_pickaxe.name=Cheese Pickaxe
 itemGroup.cheeseTab=Cheese Touch

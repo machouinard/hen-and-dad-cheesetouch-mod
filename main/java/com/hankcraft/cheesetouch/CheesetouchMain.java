@@ -3,6 +3,8 @@ package com.hankcraft.cheesetouch;
 import com.hankcraft.cheesetouch.init.ModBlocks;
 import com.hankcraft.cheesetouch.init.ModItems;
 import com.hankcraft.cheesetouch.proxy.CommonProxy;
+import net.minecraft.item.Item;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -23,13 +25,17 @@ public class CheesetouchMain {
     @Instance("cheesetouch")
     public static CheesetouchMain instance;
 
+    public static Item.ToolMaterial KRYPTONITE;
+
     @EventHandler
     public void preInit(FMLPreInitializationEvent e) {
 
+        KRYPTONITE  = EnumHelper.addToolMaterial("KRYPTONITE", 3, 800, 10.0F, 4.0F, 20);
         ModItems.init();
         ModItems.register();
         ModBlocks.init();
         ModBlocks.register();
+
     }
     @EventHandler
     public void init(FMLInitializationEvent e) {
