@@ -1,10 +1,13 @@
 package com.hankcraft.cheesetouch;
 
+import com.hankcraft.cheesetouch.functionality.Parachute;
 import com.hankcraft.cheesetouch.init.ModBlocks;
 import com.hankcraft.cheesetouch.init.ModItems;
 import com.hankcraft.cheesetouch.proxy.CommonProxy;
 import net.minecraft.item.Item;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.util.EnumHelper;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -41,6 +44,9 @@ public class CheesetouchMain {
     public void init(FMLInitializationEvent e) {
 
         proxy.registerRenders();
+        // Set up Parachute
+        FMLCommonHandler.instance().bus().register(new Parachute());
+        MinecraftForge.EVENT_BUS.register(new Parachute());
     }
     @EventHandler
     public void postInit(FMLPostInitializationEvent e) {
