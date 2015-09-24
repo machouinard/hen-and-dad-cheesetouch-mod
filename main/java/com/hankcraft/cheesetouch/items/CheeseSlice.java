@@ -13,7 +13,7 @@ public class CheeseSlice extends ItemFood {
         this.setUnlocalizedName("cheese_slice");
         this.setCreativeTab(CheesetouchMain.cheeseTab);
         this.setAlwaysEdible();
-        this.setPotionEffect(16, 10, 1, 1.0F);
+        this.setPotionEffect(6, 10, 1, 0.8F);
     }
 
 }

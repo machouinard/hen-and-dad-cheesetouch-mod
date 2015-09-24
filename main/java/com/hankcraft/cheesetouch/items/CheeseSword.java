@@ -14,6 +14,5 @@ public class CheeseSword extends ItemSword {
         this.setUnlocalizedName("cheese_sword");
         this.setCreativeTab(CheesetouchMain.cheeseTab);
         this.setMaxDamage(0);
-
     }
 }
