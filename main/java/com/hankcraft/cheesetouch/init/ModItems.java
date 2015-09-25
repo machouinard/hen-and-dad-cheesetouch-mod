@@ -2,10 +2,7 @@ package com.hankcraft.cheesetouch.init;
 
 import com.hankcraft.cheesetouch.CheesetouchMain;
 import com.hankcraft.cheesetouch.Reference;
-import com.hankcraft.cheesetouch.items.CheeseArmor;
-import com.hankcraft.cheesetouch.items.CheesePickaxe;
-import com.hankcraft.cheesetouch.items.CheeseSlice;
-import com.hankcraft.cheesetouch.items.CheeseSword;
+import com.hankcraft.cheesetouch.items.*;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -21,10 +18,12 @@ public class ModItems {
     public static Item cheese_chestplate;
     public static Item cheese_leggings;
     public static Item cheese_boots;
+    public static Item cheeseStick;
 
     public static void init() {
         cheese_sword = new CheeseSword();
         cheese_slice = new CheeseSlice();
+        cheeseStick = new CheeseStick();
         cheese_pickaxe = new CheesePickaxe();
         cheese_helmet = new CheeseArmor("cheese_helmet", CheesetouchMain.TITANIUM, 1, 0).setCreativeTab(CheesetouchMain.cheeseTab);
         cheese_chestplate = new CheeseArmor("cheese_chestplate", CheesetouchMain.TITANIUM, 1, 1).setCreativeTab(CheesetouchMain.cheeseTab);
@@ -35,6 +34,7 @@ public class ModItems {
     public static void register() {
         GameRegistry.registerItem(cheese_sword, cheese_sword.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(cheese_slice, cheese_slice.getUnlocalizedName().substring(5));
+        GameRegistry.registerItem(cheeseStick, cheeseStick.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(cheese_pickaxe, cheese_pickaxe.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(cheese_helmet, cheese_helmet.getUnlocalizedName().substring(5));
         GameRegistry.registerItem(cheese_chestplate, cheese_chestplate.getUnlocalizedName().substring(5));
@@ -46,6 +46,7 @@ public class ModItems {
 
         registerRender( cheese_sword );
         registerRender( cheese_slice );
+        registerRender( cheeseStick );
         registerRender( cheese_pickaxe );
         registerRender( cheese_helmet );
         registerRender( cheese_chestplate );

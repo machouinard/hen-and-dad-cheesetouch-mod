@@ -1,6 +1,7 @@
 package com.hankcraft.cheesetouch.proxy;
 
 import com.hankcraft.cheesetouch.init.ModBlocks;
+import com.hankcraft.cheesetouch.init.ModCrafting;
 import com.hankcraft.cheesetouch.init.ModItems;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -15,6 +16,8 @@ public class ClientProxy extends CommonProxy {
     public void preInit(FMLPreInitializationEvent e) {
 
         super.preInit(e);
+        ModCrafting.init();
+
     }
 
     @Override

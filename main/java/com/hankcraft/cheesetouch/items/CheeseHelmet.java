@@ -3,9 +3,7 @@ package com.hankcraft.cheesetouch.items;
 import com.hankcraft.cheesetouch.CheesetouchMain;
 import net.minecraft.item.ItemArmor;
 
-/**
- * Created by markchouinard on 9/23/15.
- */
+
 public class CheeseHelmet extends ItemArmor {
 
     public CheeseHelmet() {
@@ -13,4 +11,6 @@ public class CheeseHelmet extends ItemArmor {
         this.setUnlocalizedName("cheese_helmet");
         this.setCreativeTab(CheesetouchMain.cheeseTab);
     }
+
+
 }
